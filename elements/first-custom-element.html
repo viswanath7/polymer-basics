@@ -1,0 +1,12 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<!-- HTML import to include resources. In our case, we're importing polymer library -->
+<script>
+    // Polymer function call registers the element so that it's recognized by the browser
+    // The argument to the Polymer function call is the new element's prototype
+    Polymer({
+        is: 'first-custom-element', // 'is' property indicates the element's name.
+        ready: function () {
+            this.textContent = "First custom element!"
+        }
+    })
+</script>

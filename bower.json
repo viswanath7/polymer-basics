@@ -1,0 +1,28 @@
+{
+  "name": "polymer-test",
+  "authors": [
+    "Viswanath"
+  ],
+  "description": "polymer test project",
+  "main": "",
+  "keywords": [
+    "polymer",
+    "web",
+    "components"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.8.0",
+    "iron-elements": "^1.0.10",
+    "paper-elements": "^1.0.7",
+    "google-map": "^1.2.0"
+  }
+}

@@ -1,0 +1,33 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<!-- Wraps element's local DOM definition. the 'id' attribute indicates element's name -->
+<dom-module id="second-custom-element-with-local-dom"> <!--declarative portion -->
+    <!-- Template defines element's local DOM structure and styling -->
+    <template>
+        <style>
+            h1 {
+                margin-top: 0;
+                margin-bottom: 20px;
+                padding-bottom: 0;
+                border-bottom: 1px solid #e4e4e4;
+            }
+            .additional-content {
+                font-family: Helvetica, Arial, sans-serif;
+                color: #555555;
+                font-size: 14px;
+            }
+        </style>
+        <h1>Custom element content from local DOM!</h1>
+        <span id="additional-content" class="additional-content"></span>
+    </template>
+</dom-module>
+
+<script>
+    Polymer({
+      is: 'second-custom-element-with-local-dom', // imperative portion
+      ready: function () {
+        var content = 'Additional content injected via javascript callback, upon element load';
+        Polymer.dom(this.root).querySelector('#additional-content').textContent= content;
+      }
+    })
+</script>
